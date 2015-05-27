@@ -53,13 +53,16 @@ class AppKernel extends Kernel
 <h2>Setting up input_boxes</h2>
 
  - Add in the form template resource
+```yml
 # app/config/config.yml
 twig:
 form:
     resources:
         - SmadaSymfonyToolsBundle:Form:fields.html.twig
+```
 
  - Add css and js to assetic.
+```yml
 # using in config with no assetic controller
 assetic:
     assets:
@@ -69,5 +72,6 @@ assetic:
         smada_symfonytools_js:
             inputs:
                 - '@SmadaSymfonyToolsBundle/Resources/public/js/input-boxes.js'
+```
 
 <h2>Examples</h2>
