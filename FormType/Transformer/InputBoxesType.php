@@ -2,8 +2,8 @@
 
 namespace Smada\SymfonyToolsBundle\FormType\Transformer;
 
-use AuStockPhoto\ApplicationBundle\Library\Transformer\BoxesToStringTransformer;
 use Doctrine\Common\Persistence\ObjectManager;
+use Smada\SymfonyToolsBundle\Transformer\InputBoxesToStringTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormEvent;
@@ -52,7 +52,7 @@ class InputBoxesType extends AbstractType
             ]);
         });
 
-        $builder->addModelTransformer(new BoxesToStringTransformer($this->om));
+        $builder->addModelTransformer(new InputBoxesToStringTransformer($this->om));
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)

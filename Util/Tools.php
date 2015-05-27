@@ -4,7 +4,7 @@ namespace Smada\SymfonyToolsBundle\Util;
 
 use Doctrine\Common\Util\Debug as SymfonyDebug;
 
-class Debug
+class Tools
 {
     public static function dump($data, $die = false)
     {
