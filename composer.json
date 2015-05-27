@@ -3,7 +3,7 @@
     "description": "Tools for Symfony",
     "autoload": {
         "psr-4" : {
-            "Smada\\SymfonyToolsBundle" : ""
+            "Smada\\SymfonyToolsBundle\\" : ""
         }
     }
 }
