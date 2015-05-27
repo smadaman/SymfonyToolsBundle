@@ -1,7 +1,8 @@
 {
     "name": "smada/symfony-tools-bundle",
+    "description": "Tools for Symfony",
     "autoload": {
-        "psr-0" : {
+        "psr-4" : {
             "Smada\\SymfonyToolsBundle" : ""
         }
     }
